@@ -94,6 +94,12 @@ The plugin uses the following data points from the SmartThings API's `/v1/device
 * **Washing Cycle:** `components.main.samsungce.washerOperatingState.washerJobState.value`
 * **Remaining Time (minutes):** `components.main.samsungce.washerOperatingState.remainingTime.value`
 
+Developers wishing to extend the plugin's functionality can query the full status payload to discover additional parameters (like progress, water temperature, spin level, etc.). The full list of supported capabilities and their current values can be retrieved using a simple `curl` command:
+
+```bash
+curl -X GET "[https://api.smartthings.com/v1/devices/device-id/status](https://api.smartthings.com/v1/devices/device-id/status)" \
+     -H "Authorization: Bearer access-token" \
+     -H "Accept: application/json"
 ---
 
 ## 6. 🐛 Troubleshooting
