@@ -5,7 +5,15 @@ A Domoticz Python plugin to retrieve and display the status (Power On/Off, Washi
 This plugin uses **SmartThings OAuth 2.0** for secure authentication.
 
 ---
+## 💡 Key Features and Potential Use Cases
 
+This plugin provides the core data points for comprehensive washer monitoring and automation:
+
+* **Customizable:** The plugin architecture allows for easy expansion with additional washer parameters available through the SmartThings API.
+* **Washing Cycle Monitoring:** Based on the `Washing Cycle` state, independent Domoticz scripts (e.g., using DzVents) can be used to trigger an acoustic signal (or notification) in the living area when the laundry cycle is complete.
+* **Maintenance Alert:** By comparing the `Remaining Time` with the actual washing time, you can implement logic to signal the need for cleaning the filter/check-valve drain connector.
+
+---
 ## 1. 🔑 SmartThings OAuth 2.0 Access
 
 For the plugin to work, you require a **Client ID**, **Client Secret**, an initial **Access Token**, and a **Refresh Token** from the SmartThings API.
