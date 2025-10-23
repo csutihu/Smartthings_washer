@@ -101,10 +101,11 @@ curl -X GET "[https://api.smartthings.com/v1/devices/device-id/status](https://a
      -H "Authorization: Bearer access-token" \
      -H "Accept: application/json"
 ```
+---
 
 ## 6. 🐛 Troubleshooting
 
-* **Token Error (401 Unauthorized):** If Domoticz logs show a **`401 Unauthorized`** or **`Token refresh failed`** error, it indicates the Refresh Token has expired or is invalid. A new Refresh Token is required:
-    1.  Follow the steps in the **SmartThings OAuth 2.0 Access** guide to acquire a new token.
-    2.  Manually enter the new `refresh_token` into the `st_tokens.json` file and set `expiry` to 0.
+* **Token Error (401 Unauthorized):** The plugin automatically manages Access Token expiration by using the Refresh Token. However, if the **Refresh Token itself expires or becomes invalid** (which happens after a long period of inactivity or a server-side change), Domoticz logs will show an **`401 Unauthorized`** or **`Token refresh failed`** error. **In this critical scenario, a new set of OAuth credentials is required.**
+    1.  Follow the steps in the **SmartThings OAuth 2.0 Access** guide (Section 1) again to acquire a completely new set of tokens.
+    2.  Manually update the `access_token` and `refresh_token` in the `st_tokens.json` file and set `expiry` to `0`.
 * **Missing Data / Unknown State:** Check that the **Washer Device ID** is correct, and ensure your OAuth integration has the necessary `r:devices:*` scope permissions configured in the SmartThings Developer Workspace.
