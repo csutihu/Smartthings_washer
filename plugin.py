@@ -1,5 +1,5 @@
 """
-<plugin key="SmartThingsWasher" name="Samsung SmartThings Washer" author="csuti" version="3.8" wikilink="" externallink="">
+<plugin key="SmartThingsWasher" name="Samsung SmartThings Washer" author="csuti" version="3.8" wikilink="https://github.com/csutihu/Smartthings_washer">
     <description>
         <p>Retrieves and displays the status (ON/Off, Cycle, Remaining Time) of a Samsung washing machine via the SmartThings API.</p>
         <p>This plugin uses **SmartThings OAuth 2.0** for authentication.</p>
