@@ -24,7 +24,7 @@ The best guide for generating the OAuth 2.0 credentials and acquiring the necess
 
 ➡️ **[SmartThings API: Taming the OAuth 2.0 Beast](https://levelup.gitconnected.com/smartthings-api-taming-the-oauth-2-0-beast-5d735ecc6b24)**
 
-> 📌 **Note:** A PDF copy of this guide (e.g., named `SmartThings_OAuth_Guide.pdf`) is available in the GitHub repository alongside the source files, in case the original webpage becomes inaccessible. Windows CLI can be used successfully for the steps described.
+> 📌 **Note:** A PDF copy of this guide (e.g., named `SmartThings_Oauth2.0_by_Shashank_Mayya.pdf`) is available in the GitHub repository alongside the source files, in case the original webpage becomes inaccessible. Windows CLI can be used successfully for the steps described.
 
 ---
 
