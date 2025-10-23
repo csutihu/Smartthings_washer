@@ -100,7 +100,7 @@ Developers wishing to extend the plugin's functionality can query the full statu
 curl -X GET "[https://api.smartthings.com/v1/devices/device-id/status](https://api.smartthings.com/v1/devices/device-id/status)" \
      -H "Authorization: Bearer access-token" \
      -H "Accept: application/json"
----
+```
 
 ## 6. 🐛 Troubleshooting
 
